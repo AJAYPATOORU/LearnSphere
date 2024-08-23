@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+		<link rel="stylesheet" th:href="@{/register.css}">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+           
+
+<form action="/addUser" method="post" class="bak">
+ 
+	<h1>Sing Up</h1>
+
+	<div class="mb-3">
+		<span class="material-symbols-sharp">
+			person
+			</span>
+	<input type="text" class="form-control" name="username" placeholder="Your Name">
+</div>
+	<div class="mb-3">
+	<span class="material-symbols-outlined">
+		mail
+		</span>
+	<input type="email" class="form-control" name="email" placeholder="Enter Your Email">
+
+</div>
+  <div class="mb-3">
+	<span class="material-symbols-rounded">
+		lock
+		</span>
+    <input type="password"  class="form-control" name="password" placeholder="password">
+  </div>
+  
+  <label style="font-size: large; font-weight: 700;">Role:</label>
+  <input type="radio" name="role" value="trainer">
+  Trainer:
+  <input type="radio" name="role" value="student">
+  Student:
+  <br>
+  <button type="submit" class="primary-button  ">Register</button>
+ <br> 
+
+
+
+</form>
+        </div>
+        
+        <div class="right">
+<img src="/images/signup-image.jpg" alt="signup">
+        
+<a href="/login">I am already a Member</a>
+</div>
+</body>
+</html>

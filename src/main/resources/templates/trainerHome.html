@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" th:href="@{/teacher.css}">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <div class="main-nav flex">
+            <a href="#" class="campany-logo">
+                <img src="/images/logo1.png" alt="campany logo">
+            </a>
+      
+<div class="nav-links">
+    <ul class="flex">
+                <li><a href="index" class="hover-link secondry-button">HOME</a></li>
+
+            </ul>
+        </div>
+        </div>
+            </nav>
+
+            <header>
+                <div class="header-section flex">
+                   <div class="header-left">
+                    <h1 style="text-align: center;">Welcome Trainer    <p style="text-align: center;" th:text="${user.username}"></p>  </h1>
+                    
+                    <a href="/addC" class="primary-button">ADD COURSE</a>
+               
+                    <a href="/newLesson" class="primary-button">ADD LESSON</a>
+               
+                    <a href="/viewCourses" class="primary-button">VIEW COURSE</a>
+                    
+                        </div>
+                 <div class="header-right">
+                    <img src="/images/womenphoto.jpg" alt="">
+
+                </div>
+                 </div>
+            </header>
+    
+</body>
+</html>

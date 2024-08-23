@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" th:href="@{/newLesson.css}">
+
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <div class=" main-nav flex">
+                <img  src="/images/logo1.png" alt="campany logo">
+              
+<div class="nav-links">
+    <ul class="flex">
+        <li><a href="/viewCourses" class="hover-link ">View Courses</a></li>
+                <li><a href="index" class="hover-link ">HOME</a></li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <div class="main">
+        <form action="/addLesson" method="post" class="form">
+            <div class="text">
+        		<label>Course ID:</label>
+		<input type="text" name="course">
+             </div>
+		<div class="text">
+            <label>Lesson ID:</label>
+            <input type="text" name="lessonId">
+                </div>
+		<div class="text">
+            <label>Lesson Name:</label>
+            <input type="text" name="lessonName"><br>
+                </div>
+    <div class="text">
+        <label>Lesson Topic:</label>
+		<input type="text" name="lessonTopics"><br>
+            </div>
+            <div class="text">
+    <label>Lesson Link:</label>
+    <input type="text" name="lessonLink"><br>
+    </div>
+        <input type="submit" value="Add Lesson" class="secondry-button">
+	</form>
+</div>
+</body>
+</html>

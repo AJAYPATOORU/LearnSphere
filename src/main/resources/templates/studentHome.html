@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" th:href="@{/student.css}">
+</head>
+<body>
+    <nav>
+        <div class=" main-nav flex">
+            <a href="#" class="campany-logo">
+                <img src="/images/logo1.png" alt="campany logo">
+            </a>
+      
+<div class="nav-links">
+    <ul class="flex">
+        <li><a href="/myCourses" class="hover-link secondry-button">My Courses</a></li>
+                <li><a href="index" class="hover-link secondry-button">HOME</a></li>
+
+            </ul>
+        </div>
+        </div>
+            </nav>
+
+            <header>
+         <div class="container header-section flex">
+            <div class="header-left">
+       	        <h1>  Welcome <p th:text="${user.username}"></p></h1> 
+                    <a href="/purchase" class="hover-link primary-button">Purchase Course</a>
+                    <br>
+                 </div>
+          <div class="header-right">
+                  <img src="css/image/asset.jpg" alt="">
+              </div>
+          </div>
+     </header>
+</body>
+</html>

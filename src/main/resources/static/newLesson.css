@@ -1,0 +1,123 @@
+@charset "ISO-8859-1";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-text-color:#183b56;
+    --secondary-text-color:#577592;
+    --accent-color:#2294ed;
+    --accent-color-dark:#1d69a3;
+    --padding-inline-section: 20px;
+
+}
+
+body{
+    background-image: url(/css/image/pexels-lumn-1040837.jpg);
+    font-family:'poppins', sans-serif ;
+    color: var(--padding-inline-section);
+    background-size: cover;
+
+}
+
+h1{
+    font-size: 3rem;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+.flex {
+    display: flex;
+    align-items: center;
+}
+ul{
+    list-style: none;
+}
+
+
+.secondry-button{
+    border: .5px solid var(--secondary-text-color);
+    border-radius: 6px;
+    font-weight: 700;
+    color: var(--primary-text-color) !important;
+    padding: 12px 24px;
+    transition: 0.2s ease-out;
+    margin-left: 10%;
+margin-top: 30px;    
+    }
+    .secondry-button:hover{
+        border-color: var(--accent-color);
+        color: var(--accent-color)  !important;
+    }
+.main-nav img {
+    width: 150px;
+
+}
+
+.main-nav{
+    height: 100px;
+   width: 100%;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.nav-links ul li{
+/* padding-right: 10px;
+    justify-content: end;
+    gap: 40px; */
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    text-decoration: none;
+    color: #111010;
+    text-transform: uppercase;
+}
+.nav-links ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background-color: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.main .form{
+    backdrop-filter: blur(10px);
+
+    width: 500px;
+    height: 500px;
+border: 2px solid rgb(22, 22, 22);
+margin-left: 30%;
+margin-top: 10px;
+
+}
+.main .form .text{
+font-weight: 700;
+   padding-left: 30px;
+   padding-bottom: 10px;
+   margin-top: 20px;
+   color: rgb(20, 20, 20);
+}
+.main .form .text input{
+    border: none;
+    border-bottom:2px solid rgb(91, 92, 92);
+    margin-top: 20px;
+    font-size: 20px;
+    padding-left: 15px;
+    outline: none;
+    background: none;
+}

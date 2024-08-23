@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>My Courses</title>
+<link rel="stylesheet" th:href="@{/myCourses.css}">
+</head>
+<body>
+    <nav>
+        <div class=" main-nav flex">
+                <img  src="css/image/logo1.png" alt="campany logo">
+              
+<div class="nav-links">
+    <ul class="flex">
+        <li><a href="addC" class="hover-link ">Add Courses</a></li>
+                <li><a href="index" class="hover-link ">HOME</a></li>
+
+            </ul>
+        </div>
+    </nav>
+    
+<table class="table" border="solid black 1px">
+  <thead>
+    <tr>
+        <th>CourseId</th>
+		<th>CourseName</th>
+		<th>CoursePrice</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr th:each="clist:${clist}">
+        <td th:text="${clist.courseId}"></td>
+                <td th:text="${clist.courseName}"></td>
+        <td th:text="${clist.coursePrice}"></td>
+    </tr>
+  </tbody>
+</table>
+		
+</body>
+</html>

@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    		<link rel="stylesheet" th:href="@{/login.css}">
+
+    <title>LearnSphere</title>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+<img src="/images/signin-image.jpg" alt="sign in" >
+         <a href="/register">Create an account</a>
+
+        </div>
+        
+        <div class="right">
+                      
+<form action="/validateUser" method="post" class="bak">
+ 
+	<h1>Sign in</h1>
+	<div class="mb-3">
+        <span class="material-symbols-outlined">
+            mail
+            </span>
+        <input type="email" class="form-control" name="email" placeholder="Enter Your Email">
+
+</div>
+  <div class="mb-3">
+	<span class="material-symbols-rounded">
+		lock
+		</span>
+    <input type="password"  class="form-control" name="password" placeholder="password">
+  </div>
+  
+  
+  <button type="submit" class="primary-button ">Log In</button>
+ <br> 
+
+
+</form>
+
+        </div>
+</body>
+</html>
